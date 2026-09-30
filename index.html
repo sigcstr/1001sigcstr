@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>snack time</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <style type="text/css">
+                body{background: white;
+                        background-size:30px;
+                text-align: center;}
+                img {
+                        width: 200px;         
+                        height: auto;        
+                        object-fit: cover; 
+                        margin: 20px;   
+                }
+                section{background: white;
+                        padding:10px 0px;
+                }
+.h1{width:1000px; 
+                        font-size:90px;
+                        font-style: normal;
+                        margin:auto; 
+                        background: white;
+                        padding:70px 0px;
+                        color: red;}
+.h2{width:1000px; font-size:30px;
+                        font-style: normal;
+                        margin:auto; 
+                        background: white;
+                        padding:10px 0px;}
+
+html {
+  font-family: "Libre Caslon Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+        
+        </style>
+</head>
+<body>
+        <section>
+                <div class="h1">SNACK TIME</div>
+                <div class="h2">have some chips!</div>
+        </section>
+
+         <img src="pt.png" id="pt">
+         <audio src="c1.mp3" id="c1"></audio>
+
+         <img src="bc.png" id="bc">
+         <audio src="c2.mp3" id="c2"></audio>
+
+         <img src="dt.png" id="dt">
+         <audio src="c3.mp3" id="c3"></audio>
+
+         <img src="tc.png" id="tc">
+         <audio src="c4.mp3" id="c4"></audio>
+
+         <img src="ch.png" id="ch">
+         <audio src="c5.mp3" id="c5"></audio>
+
+         
+         <script>
+          let state = "off";
+         pt.onclick = function(){    
+                 if(state == "off"){
+                         c1.play();        
+                         pt.src = "pt2.png";
+                         pt.style.maxWidth = "300px";
+        pt.style.height = "auto";
+                         state = "on";
+                 }else if(state == "on"){
+                         c1.pause();
+                         pt.src = "pt.png";
+                         pt.style.maxWidth = "";
+        pt.style.height = "";
+                         state = "off";
+                 }
+         }
+         let state2 = "off";
+         bc.onclick = function(){    
+                 if(state == "off"){
+                         c2.play();        
+                         bc.src = "bc2.png";
+                         bc.style.maxWidth = "300px";
+        bc.style.height = "auto";
+                         state = "on";
+                 }else if(state == "on"){
+                         c2.pause();
+                         bc.src = "bc.png";
+                         bc.style.maxWidth = ""; 
+        bc.style.height = "";
+                         state = "off";
+                 }
+         }
+         let state3 = "off";
+         dt.onclick = function(){    
+                 if(state == "off"){
+                         c3.play();        
+                         dt.src = "dt2.png";
+                         dt.style.maxWidth = "300px";
+        dt.style.height = "auto";
+                         state = "on";
+                 }else if(state == "on"){
+                         c3.pause();
+                         dt.src = "dt.png";
+                         dt.style.maxWidth = "";
+        dt.style.height = "";
+                         state = "off";
+                 }
+         }
+         let state4 = "off";
+         tc.onclick = function(){    
+                 if(state == "off"){
+                         c4.play();        
+                         tc.src = "tc2.png";
+                         tc.style.maxWidth = "300px";
+        tc.style.height = "auto";
+                         state = "on";
+                 }else if(state == "on"){
+                         c4.pause();
+                         tc.src = "tc.png";
+                         tc.style.maxWidth = "";
+        tc.style.height = "";
+                         state = "off";
+                 }
+         }
+         let state5 = "off";
+         ch.onclick = function(){    
+                 if(state == "off"){
+                         c5.play();        
+                         ch.src = "ch2.png";
+                         ch.style.maxWidth = "180px";
+        ch.style.height = "auto";
+                         state = "on";
+                 }else if(state == "on"){
+                         c5.pause();
+                         ch.src = "ch.png";
+                         state = "off";
+                 }
+         }
+
+
+         </script>
+
+
+
+
+</body>
+</html>
